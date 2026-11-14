@@ -17,7 +17,7 @@
 - 핵심 질문: 뉴스의 「물가 3% 상승」은 누가, 무엇을, 어떻게 재서 나온 숫자인가?
 - 목표: Explain — 지표 하나의 작성기관·정의·조사 방법·공표 주기를 찾아 그 숫자가 무엇을 재는지 설명한다.
 - 만들어 볼 것: 내 업무에 걸리는 지표 하나의 「신분증」(작성기관, 정의, 주기, 최신값, 통계표 URL)
-- 국내 근거: 「통계법」의 국가통계 체계, KOSIS 국가통계포털, 한국은행 ECOS
+- 국내 근거: 「통계법」의 통계작성기관·지정통계 체계, KOSIS 국가통계포털, 한국은행 ECOS
 - 글로벌 비교: 미국 FRED·BLS, Eurostat, OECD Data Explorer는 같은 지표를 어떻게 공표하는가
 - 근거: CORE Econ The Economy 2.0, 각 통계 작성기관의 작성 방법 설명
 
@@ -137,7 +137,7 @@
 - 목표: Evaluate — 시장 획정, 집중도(HHI), 단독·협조 효과로 기업결합의 경쟁 영향을 판단한다.
 - 만들어 볼 것: 실제 국내 기업결합 심사 사례 하나의 경제분석 요약과 내 판단
 - 국내 근거: 「독점규제 및 공정거래에 관한 법률」의 기업결합 제한, 공정거래위원회 「기업결합 심사기준」
-- 글로벌 비교: 미국 「2023 Merger Guidelines」, EU 「수평결합 가이드라인」의 집중도 기준은 국내와 어떻게 다른가
+- 글로벌 비교: 미국 「2023 Merger Guidelines」, EU 「수평결합 가이드라인」(개편 중)의 집중도 기준은 국내와 어떻게 다른가
 - 경계·연결: 공정거래 준수 체계와 신고 절차는 go-compliance-and-legal, M&A 전략은 go-strategy, 인수 가격은 go-valuation
 - 근거: 공정거래위원회 기업결합 심사기준
 
@@ -169,7 +169,7 @@
 - 핵심 질문: 한쪽 고객에게는 공짜로 주는 플랫폼은 어떻게 돈을 벌고, 왜 한두 곳으로 쏠리는가?
 - 목표: Evaluate — 간접 네트워크 효과·양면 가격 책정·쏠림을 근거로 플랫폼 시장의 경쟁 문제를 판단한다.
 - 만들어 볼 것: 우리가 쓰거나 입점한 플랫폼 하나의 양면 가격 구조와 의존 위험 분석
-- 국내 근거: 「독점규제 및 공정거래에 관한 법률」의 플랫폼 사업자 심사 사례, 공정거래위원회 「온라인 플랫폼 사업자의 시장지배적지위 남용행위 및 불공정거래행위에 대한 심사지침」
+- 국내 근거: 「독점규제 및 공정거래에 관한 법률」의 플랫폼 사업자 심사 사례, 공정거래위원회 「온라인 플랫폼 사업자의 시장지배적지위 남용행위에 대한 심사지침」
 - 글로벌 비교: EU 「디지털시장법(DMA)」의 게이트키퍼 규제는 사후 심사와 무엇이 다른가
 - 경계·연결: 플랫폼 사업 전략은 go-strategy, 입점 계약 준수는 go-compliance-and-legal
 - 근거: Rochet·Tirole(2003)
@@ -333,7 +333,7 @@
 - 핵심 질문: 같은 만 원도 얻을 때와 잃을 때 왜 무게가 다른가?
 - 목표: Apply — 기준점·손실 회피·확률 가중으로 가격·할인·보상 설계에 대한 고객과 직원의 반응을 예측한다.
 - 만들어 볼 것: 우리 가격 인상 공지문을 손실 회피 관점에서 두 가지로 써 보고 반응 예측
-- 국내 근거: 「표시·광고의 공정화에 관한 법률」은 할인·가격 표시의 어떤 프레이밍을 막는가
+- 국내 근거: 「표시ㆍ광고의 공정화에 관한 법률」은 할인·가격 표시의 어떤 프레이밍을 막는가
 - 글로벌 비교: Kahneman·Tversky(1979) 전망 이론과 이후 현장 연구
 - 경계·연결: 메시지·캠페인 실행은 go-marketing
 - 근거: Kahneman·Tversky(1979)
@@ -358,7 +358,7 @@
 - 핵심 질문: 우리 제품의 다음 가격을 무엇에 근거해 정하는가?
 - 목표: Develop — 탄력성 가정, 경쟁사 반응, 고객 반응, 규제 점검을 담은 가격 결정 메모를 만든다.
 - 만들어 볼 것: 결정권자에게 낼 2쪽 가격 결정 메모
-- 국내 근거: 「독점규제 및 공정거래에 관한 법률」, 「표시·광고의 공정화에 관한 법률」
+- 국내 근거: 「독점규제 및 공정거래에 관한 법률」, 「표시ㆍ광고의 공정화에 관한 법률」
 - 글로벌 비교: 해외 경쟁사·해외 시장의 가격 체계 비교
 - 경계·연결: 실행 캠페인은 go-marketing
 - 근거: 앞 모듈들
@@ -391,3 +391,100 @@
 
 | 이름 | 기관 | URL | 조회일 |
 |---|---|---|---|
+| 한국은행법 | 한국은행(법률) | <https://elaw.klri.re.kr/kor_service/lawViewMultiContent.do?hseq=47917> | 2026-11-14 |
+| 독점규제 및 공정거래에 관한 법률 | 공정거래위원회 | <https://elaw.klri.re.kr/kor_service/lawViewMultiContent.do?hseq=74355> | 2026-11-14 |
+| 기업결합 심사기준 | 공정거래위원회(고시) | <https://www.ftc.go.kr/www/selectBbsNttView.do?key=21&bordCd=6&searchCtgry=4&nttSn=9039> | 2026-11-14 |
+| 온라인 플랫폼 사업자의 시장지배적지위 남용행위에 대한 심사지침 | 공정거래위원회(예규) | <https://www.ftc.go.kr/www/selectBbsNttView.do?key=19&bordCd=6&searchCtgry=2&nttSn=8935> | 2026-11-14 |
+| 통계법 | 국가데이터처 | <https://elaw.klri.re.kr/kor_service/lawViewMultiContent.do?hseq=66269> | 2026-11-14 |
+| 외국환거래법 | 재정경제부 | <https://elaw.klri.re.kr/kor_service/lawViewMultiContent.do?hseq=57324> | 2026-11-14 |
+| 국가재정법 | 기획예산처·재정경제부 | <https://www.kdi.re.kr/kdidata/departments/pimac/National%20Finance%20Act_2026.pdf> | 2026-11-14 |
+| 물가안정에 관한 법률 | 재정경제부 | <https://opinion.lawmaking.go.kr/gcom/ogLmPp/87088> | 2026-11-14 |
+| 금융소비자 보호에 관한 법률 | 금융위원회 | <https://opinion.lawmaking.go.kr/gcom/ogLmPp/85476> | 2026-11-14 |
+| 표시ㆍ광고의 공정화에 관한 법률 | 공정거래위원회 | <https://opinion.lawmaking.go.kr/gcom/ogLmPp/86076> | 2026-11-14 |
+| 전자상거래 등에서의 소비자보호에 관한 법률 | 공정거래위원회 | <https://www.ftc.go.kr/www/selectBbsNttView.do?key=12&bordCd=3&nttSn=46527> | 2026-11-14 |
+| 온실가스 배출권의 할당 및 거래에 관한 법률 | 기후에너지환경부 | <https://opinion.lawmaking.go.kr/gcom/ogLmPp/85508> | 2026-11-14 |
+| 자유무역협정의 이행을 위한 관세법의 특례에 관한 법률 | 재정경제부(집행 관세청) | <https://opinion.lawmaking.go.kr/gcom/ogLmPp/86364> | 2026-11-14 |
+| 대외무역법 | 산업통상부 | <https://opinion.lawmaking.go.kr/gcom/ogLmPp/87100> | 2026-11-14 |
+| 최저임금법 | 고용노동부·최저임금위원회 | <https://www.minimumwage.go.kr/> | 2026-11-14 |
+| Federal Reserve Act | 미국 연방준비제도 | <https://www.federalreserve.gov/aboutthefed/section2a.htm> | 2026-11-14 |
+| 유럽연합기능조약(TFEU) | EU | <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12016E127> | 2026-11-14 |
+| 협정문(Articles of Agreement) | IMF | <https://www.imf.org/external/pubs/ft/aa/index.htm> | 2026-11-14 |
+| 국민계정체계(SNA) | UN 통계위원회 | <https://unstats.un.org/unsd/nationalaccount/sna2025.asp> | 2026-11-14 |
+| 국제수지 매뉴얼(BPM) | IMF | <https://www.imf.org/en/data/statistics/bpm> | 2026-11-14 |
+| 2023 Merger Guidelines | 미국 법무부·FTC | <https://www.justice.gov/atr/2023-merger-guidelines> | 2026-11-14 |
+| 수평결합 가이드라인 | 유럽연합 집행위원회 | <https://competition-policy.ec.europa.eu/mergers/review-merger-guidelines_en> | 2026-11-14 |
+| 디지털시장법(DMA) | EU | <https://digital-markets-act.ec.europa.eu/about-dma/legislation_en> | 2026-11-14 |
+| KOSIS 국가통계포털 | 국가데이터처 | <https://kosis.kr> | 2026-11-14 |
+| 한국은행 ECOS | 한국은행 | <https://ecos.bok.or.kr> | 2026-11-14 |
+| 한국은행 물가안정목표 | 한국은행 | <https://www.bok.or.kr/portal/main/contents.do?menuNo=200291> | 2026-11-14 |
+| 한국은행 기준금리 추이 | 한국은행 | <https://www.bok.or.kr/portal/singl/baseRate/list.do?dataSeCd=01&menuNo=200643> | 2026-11-14 |
+| 한국은행 금융안정보고서 | 한국은행 | <https://www.bok.or.kr/portal/singl/newsData/list.do?menuNo=200068> | 2026-11-14 |
+| 한국은행 경제전망보고서 | 한국은행 | <https://www.bok.or.kr/portal/singl/newsData/list.do?menuNo=200066> | 2026-11-14 |
+| 한국은행 기업경영분석 | 한국은행 | <https://www.bok.or.kr/portal/singl/newsData/list.do?menuNo=200455> | 2026-11-14 |
+| 지표누리(e-나라지표) | 국가데이터처 | <https://www.index.go.kr/> | 2026-11-14 |
+| 국가데이터처 보도자료(소비자물가·고용동향·산업활동동향) | 국가데이터처 | <https://mods.go.kr/menu.es?mid=a10301010000> | 2026-11-14 |
+| KDI 경제전망 | 한국개발연구원 | <https://www.kdi.re.kr/research/economy> | 2026-11-14 |
+| CORE Econ The Economy 2.0 | CORE Econ | <https://books.core-econ.org/the-economy/> | 2026-11-14 |
+| UN 공식통계 기본원칙 | UN | <https://unstats.un.org/fpos/> | 2026-11-14 |
+| HM Treasury Green Book | 영국 재무부 | <https://www.gov.uk/government/publications/the-green-book--2> | 2026-11-14 |
+| HM Treasury Magenta Book | 영국 재무부 | <https://www.gov.uk/government/publications/the-magenta-book> | 2026-11-14 |
+| ILO 노동통계 기준(19차 ICLS 결의) | ILO | <https://www.ilo.org/resource/resolution-concerning-statistics-work-employment-and-labour-0> | 2026-11-14 |
+| BIS 실효환율 | BIS | <https://data.bis.org/topics/EER> | 2026-11-14 |
+| FTC Bringing Dark Patterns to Light | 미국 FTC | <https://www.ftc.gov/reports/bringing-dark-patterns-light> | 2026-11-14 |
+| OECD 행동 통찰 도구(BASIC) | OECD | <https://doi.org/10.1787/9ea76a8f-en> | 2026-11-14 |
+| IMF World Economic Outlook·Fiscal Monitor | IMF | <https://www.imf.org/en/Publications> | 2026-11-14 |
+| Tversky·Kahneman(1974) | Science | <https://doi.org/10.1126/science.185.4157.1124> | 2026-11-14 |
+| Kahneman·Tversky(1979) | Econometrica | <https://doi.org/10.2307/1914185> | 2026-11-14 |
+| Akerlof(1970) | Quarterly Journal of Economics | <https://doi.org/10.2307/1879431> | 2026-11-14 |
+| Rochet·Tirole(2003) | Journal of the European Economic Association | <https://doi.org/10.1162/154247603322493212> | 2026-11-14 |
+| Card·Krueger(1994) | American Economic Review | <https://econpapers.repec.org/RePEc:aea:aecrev:v:84:y:1994:i:4:p:772-93> | 2026-11-14 |
+| Thaler·Sunstein(2008) | Yale University Press | <https://yalebooks.yale.edu/book/9780300262285/nudge/> | 2026-11-14 |
+
+확인 경로 메모(조회일 2026-11-14):
+
+- 한국은행법: 한국법제연구원 국·영문 본문과 한국은행 안내 페이지. 목적·금융안정 유의·정부 협의 물가안정목표·금융통화위원회 규정 확인. law.go.kr 본문은 점검(11/13 21:00~11/14 21:00)으로 미대조
+- 독점규제 및 공정거래에 관한 법률: 한국법제연구원 본문. 시장지배적지위 남용 금지·기업결합 제한 규정 확인. law.go.kr 본문은 점검(11/13 21:00~11/14 21:00)으로 미대조
+- 기업결합 심사기준: 공정위 고시 게시판. 시장획정·HHI 안전지대 규정 확인(2025 기업결합 가이드북 PDF)
+- 온라인 플랫폼 사업자의 시장지배적지위 남용행위에 대한 심사지침: 공정위 예규 게시판. 정식 명칭 확인
+- 통계법: 한국법제연구원 본문(통계작성기관·지정통계 정의). 통계청은 2025-10-01 국가데이터처로 바뀜. law.go.kr 본문은 점검(11/13 21:00~11/14 21:00)으로 미대조
+- 외국환거래법: 한국법제연구원 본문(목적 조항). law.go.kr 본문은 점검(11/13 21:00~11/14 21:00)으로 미대조
+- 국가재정법: 국가법령정보센터 영문 PDF(KDI 게시). 수치 재정준칙 없음 확인, 입법 진행은 세션에서 확인
+- 물가안정에 관한 법률: 국민참여입법센터 시행령 입법예고. law.go.kr 본문은 점검(11/13 21:00~11/14 21:00)으로 미대조
+- 금융소비자 보호에 관한 법률: 국민참여입법센터 입법예고, 금융위 보도자료의 설명의무 언급. law.go.kr 본문은 점검(11/13 21:00~11/14 21:00)으로 미대조
+- 표시ㆍ광고의 공정화에 관한 법률: 국민참여입법센터 입법예고 원문에서 명칭 문자 확인. law.go.kr 본문은 점검(11/13 21:00~11/14 21:00)으로 미대조
+- 전자상거래 등에서의 소비자보호에 관한 법률: 공정위 보도자료. 다크패턴 규제 시행 확인. law.go.kr 본문은 점검(11/13 21:00~11/14 21:00)으로 미대조
+- 온실가스 배출권의 할당 및 거래에 관한 법률: 국민참여입법센터 시행령 입법예고. law.go.kr 본문은 점검(11/13 21:00~11/14 21:00)으로 미대조
+- 자유무역협정의 이행을 위한 관세법의 특례에 관한 법률: 국민참여입법센터 시행규칙 입법예고. law.go.kr 본문은 점검(11/13 21:00~11/14 21:00)으로 미대조
+- 대외무역법: 국민참여입법센터 시행령 입법예고. law.go.kr 본문은 점검(11/13 21:00~11/14 21:00)으로 미대조
+- 최저임금법: 최저임금위원회 법령정보. law.go.kr 본문은 점검(11/13 21:00~11/14 21:00)으로 미대조
+- Federal Reserve Act: Section 2A 목표 문구 확인. 장기 목표 성명(2% PCE)은 2025-08 개정
+- 유럽연합기능조약(TFEU): ECB 물가안정 목표 조항. EUR-Lex 본문은 조회일에 열리지 않아 EU 출판국 메타데이터와 유럽의회 팩트시트로 확인. ECB 전략: https://www.ecb.europa.eu/mopo/strategy/html/index.en.html
+- 협정문(Articles of Agreement): Article IV 감시 조항 직접 열람
+- 국민계정체계(SNA): 2025 SNA가 2025-03-05 채택(IMF 보도자료로 확인). 2008 SNA를 대체, 나라별 이행 중
+- 국제수지 매뉴얼(BPM): BPM7이 2025-03-20 발표, BPM6 대체 예정
+- 2023 Merger Guidelines: 2023-12-18 공동 발표, 집중도 추정 기준 확인
+- 수평결합 가이드라인: 2004 Guidelines on the assessment of horizontal mergers. 개편 중(초안 2026-04-30, 확정 2026년 4분기 예정)
+- 디지털시장법(DMA): Regulation (EU) 2022/1925
+- KOSIS 국가통계포털: 통계표는 로그인 화면으로 넘어갈 수 있음
+- 한국은행 ECOS: 첫 화면은 스크립트. Open API 공개 시험 키 sample로 수치 조회 확인
+- 한국은행 물가안정목표: 목표 지표·주기 확인
+- 한국은행 기준금리 추이: 표 직접 열람
+- 한국은행 금융안정보고서: 목록 확인
+- 한국은행 경제전망보고서: 목록 확인
+- 한국은행 기업경영분석: 목록 확인
+- 지표누리(e-나라지표): 지표 상세 본문 열람 확인
+- 국가데이터처 보도자료(소비자물가·고용동향·산업활동동향): 경기종합지수·경제활동인구조사·소비자물가지수 작성기관 확인
+- KDI 경제전망: 연 2회 발간
+- CORE Econ The Economy 2.0: 무료 공개 교재, 미시·거시 각 10단원
+- UN 공식통계 기본원칙: 2014 총회 결의 A/RES/68/261
+- HM Treasury Green Book: 2026판(2026-10-28 갱신)
+- HM Treasury Magenta Book: 정책 평가 지침
+- ILO 노동통계 기준(19차 ICLS 결의): 2023 21차 ICLS에서 일부 개정
+- FTC Bringing Dark Patterns to Light: 2022-09 보고서
+- OECD 행동 통찰 도구(BASIC): DOI 이동 확인, 본문은 403
+- Tversky·Kahneman(1974): Crossref
+- Kahneman·Tversky(1979): Crossref
+- Akerlof(1970): Crossref
+- Rochet·Tirole(2003): Crossref
+- Card·Krueger(1994): DOI 없음
+- Thaler·Sunstein(2008): 현재 판은 Final Edition(2021)
