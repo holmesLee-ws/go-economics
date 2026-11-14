@@ -33,8 +33,9 @@
 
 - 상태를 확인하려고 직접 묻는 것은 신호가 엇갈릴 때만 한다. 최소 3~4개 비트 간격을 두고, 세션 중 한두 번으로 충분하다. 상태가 분명해진 뒤 다음 활동을 고르게 하는 것은 여기에 세지 않는다.
 - 「잘 따라오고 있나요?」처럼 묻지 않는다. 내가 본 것을 말하고 선택지를 준다. 예: 「이 부분은 이미 익숙해 보여요. 더 어렵게 가 볼까요, 바로 다음으로 갈까요?」
+- `bored_or_ready`로 본 차례에는 무엇을 할지 학습자가 고르게 한다. 예: 「① 더 어려운 문제 ② 우리 회사 일로 과제 하나 ③ 다음 모듈 — 어느 쪽이 좋아요?」
 - 학습자가 먼저 빠르다, 느리다, 지루하다고 하면 그 말이 신호보다 우선한다. 바로 바꾼다.
 
 ## 기록
 
-판단이 바뀌면 `learner/state.json`의 `pace`를 고친다. `read`는 `flow`, `too_fast`, `needs_more`, `bored_or_ready`, `stuck` 중 하나다(처음 값 `unknown`은 판단 전을 뜻한다). `evidence`에는 그렇게 본 근거를 한 문장으로, `action`에는 바꾼 방식을 적는다. 바뀌기 전 값은 `pace.history` 끝에 `{at, read, evidence}`로 시간 순서대로 덧붙인다. `unknown`에서 처음 바뀔 때도 이전 값을 넣는다. 학습자에게 맞았던 방식은 `preferences`에 남긴다.
+판단이 바뀌면 `learner/state.json`의 `pace`를 고친다. `read`는 `flow`, `too_fast`, `needs_more`, `bored_or_ready`, `stuck` 중 하나다(처음 값 `unknown`은 판단 전을 뜻한다). `evidence`에는 그렇게 본 근거를 한 문장으로, `action`에는 바꾼 방식을 적는다. 바뀌기 전 값은 `pace.history` 끝에 `{at, read, evidence}`로 시간 순서대로 덧붙인다. `unknown`에서 처음 바뀔 때도 이전 값을 넣는다. 새 항목은 배열 끝에만 붙이고, `at`에는 날짜를 반드시 넣는다(`pace.at`도 같다). 학습자에게 맞았던 방식은 `preferences`에 남긴다.
