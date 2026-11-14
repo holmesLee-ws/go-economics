@@ -11,7 +11,9 @@
   "current": {
     "module": null,
     "path": null,
-    "pending_probe": null
+    "pending_probe": null,
+    "domestic_opened": false,
+    "global_asked": false
   },
   "modules": {},
   "gaps": [],
