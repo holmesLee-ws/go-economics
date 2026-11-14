@@ -31,13 +31,13 @@
 
 ## 어디서 확인하는가
 
-공식 출처를 쓴다. 검색 결과(언론·블로그)는 실마리로만 쓰고 수치의 근거로 쓰지 않는다. 출처는 WebFetch로 연다(ECOS API 주소도 WebFetch로 연다). `curl` 같은 셸 명령은 쓰지 않는다.
+공식 출처를 쓴다. 검색 결과(언론·블로그)는 실마리로만 쓰고 수치의 근거로 쓰지 않는다. 출처는 WebFetch로만 연다(ECOS API 주소도 WebFetch로 연다). `curl` 같은 셸 명령이나 하위 에이전트 위임을 쓰지 않는다. 페이지에서 숫자가 읽히지 않으면 같은 수치를 ECOS API 주소로 WebFetch해 한 번 더 보고, 그래도 안 되면 「확인 못 함」으로 둔다.
 
 | 필요한 것 | 먼저 볼 곳 | 메모 |
 |---|---|---|
 | 법령 본문 | 국가법령정보센터 law.go.kr | 페이지가 스크립트로 그려져 본문이 안 읽히거나 점검 중일 수 있다. 그때는 한국법제연구원 영문법령 elaw.klri.re.kr(국·영문 본문, 최신 개정이 늦게 반영됨 — 반영 시점을 함께 말한다)이나 소관 기관 안내 페이지로 확인하고, 학습자에게 law.go.kr 링크를 준다 |
 | 물가안정목표 | 한국은행 물가안정목표 페이지 `https://www.bok.or.kr/portal/main/contents.do?menuNo=200291` | |
-| 한국은행 기준금리 | 한국은행 기준금리 추이 페이지 `https://www.bok.or.kr/portal/singl/baseRate/list.do?dataSeCd=01&menuNo=200643` | 표가 바로 읽힌다 |
+| 한국은행 기준금리 | ECOS API(아래 코드 표의 722Y001), 사람에게 줄 링크는 한국은행 기준금리 추이 페이지 `https://www.bok.or.kr/portal/singl/baseRate/list.do?dataSeCd=01&menuNo=200643` | 페이지 표는 WebFetch 요약에서 숫자가 빠질 때가 있다. 수치는 API로 확인한다 |
 | 금리·국민계정·국제수지·환율·물가 수치 | 한국은행 ECOS Open API, 공개 시험 키 `sample` | 형식: `https://ecos.bok.or.kr/api/StatisticSearch/sample/json/kr/1/10/<통계코드>/<주기>/<시작>/<끝>/<항목코드>`. 한 번에 10행까지다(기간을 10개 이하로 잡는다). 자주 쓰는 코드는 아래 표에 있다. 그 밖은 `.../api/StatisticItemList/sample/json/kr/1/10/<통계코드>`로 항목을 본다. 개인 인증키는 받지도 묻지도 않는다 |
 | 국내 지표 요약(물가·고용·성장) | 지표누리(e-나라지표) index.go.kr | 지표 설명과 최근 값이 함께 읽힌다 |
 | 물가·고용·경기 원자료 발표 | 국가데이터처 보도자료 mods.go.kr | 소비자물가동향·고용동향·산업활동동향 |
