@@ -21,17 +21,22 @@ function parseCurriculum(text) {
   const [body, sourcePart = ""] = text.split(/^## 출처 표$/m);
   if (!sourcePart) problems.push("「## 출처 표」 절 없음");
   const sources = new Set();
+  let inTable = true;
+  if (/^### /m.test(sourcePart)) problems.push("출처 표 뒤에 모듈이 있음");
   for (const line of sourcePart.split("\n")) {
     const cells = line.split("|").map((c) => c.trim());
-    if (cells.length < 6 || cells[1] === "이름" || /^-+$/.test(cells[1])) continue;
+    if (!line.startsWith("|")) { if (sources.size) inTable = false; continue; }
+    if (!inTable) { problems.push(`출처 표 밖의 표 줄: ${line.slice(0, 40)}`); continue; }
+    if (cells[1] === "이름" || /^-+$/.test(cells[1])) continue;
+    if (cells.length !== 6) { problems.push(`출처 표 칸 수 오류: ${line.slice(0, 40)}`); continue; }
     const [, name, org, url, date] = cells;
     if (!name || !org) problems.push(`출처 표 빈 칸: ${line}`);
-    if (!/^<?https:\/\//.test(url)) problems.push(`출처 표 URL 형식 오류: ${name}`);
-    if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) problems.push(`출처 표 조회일 형식 오류: ${name}`);
+    if (!/^<?https:\/\/[^\s>]+>?$/.test(url) || url === "<https://>") problems.push(`출처 표 URL 형식 오류: ${name}`);
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || Number.isNaN(Date.parse(date)) || new Date(date).toISOString().slice(0, 10) !== date) problems.push(`출처 표 조회일 형식 오류: ${name}`);
     sources.add(name);
   }
   if (sources.size === 0) problems.push("출처 표가 비어 있음");
-  for (const m of text.matchAll(/제\s*\d+\s*조/g)) problems.push(`지도에 조문 번호 금지: ${m[0]}`);
+  for (const m of text.matchAll(/제\s*\d+\s*조(의\s*\d+)?|\d+\s*조의\s*\d+/g)) problems.push(`지도에 조문 번호 금지: ${m[0]}`);
   const blocks = body.split(/^### /m).slice(1);
   for (const block of blocks) {
     const head = block.split("\n")[0];
@@ -42,12 +47,12 @@ function parseCurriculum(text) {
     const fields = {};
     for (const line of block.split("\n").slice(1)) {
       const f = line.match(/^- ([^:]+): (.+)$/);
-      if (f) fields[f[1]] = f[2];
+      if (f) fields[f[1]] = f[2].trim();
     }
-    for (const name of FIELDS) if (!fields[name]) problems.push(`${id}: 「${name}」 없음`);
+    for (const name of FIELDS) if (!fields[name] || /^(-|없음|해당 없음|tbd|todo)$/i.test(fields[name]) && name !== "선수") problems.push(`${id}: 「${name}」 없음`);
     if (fields["유형"] && !TYPES.includes(fields["유형"])) problems.push(`${id}: 유형은 제도·원리 중 하나`);
-    for (const f of ["국내 근거", "글로벌 비교", "근거"]) for (const n of (fields[f] || "").matchAll(/「([^」]+)」/g)) if (!sources.has(n[1])) problems.push(`${id}: 출처 표에 없는 이름 「${n[1]}」`);
-    for (const f of ["국내 근거", "글로벌 비교"]) if (fields[f] && /\d\s*%/.test(fields[f])) problems.push(`${id}: ${f}에 수치 금지`);
+    for (const f of Object.keys(fields).filter((k) => k !== "핵심 질문")) for (const n of (fields[f] || "").matchAll(/「([^」]+)」/g)) if (!sources.has(n[1])) problems.push(`${id}: 출처 표에 없는 이름 「${n[1]}」`);
+    for (const f of ["국내 근거", "글로벌 비교"]) if (fields[f] && /\d\s*([%％]|퍼센트)/.test(fields[f])) problems.push(`${id}: ${f}에 수치 금지`);
     if (id.startsWith("X") && fields["목표"] && !fields["목표"].startsWith("Develop — ")) problems.push(`${id}: 졸업 프로젝트 목표는 Develop`);
     if (fields["목표"] && !LEVELS.some((l) => fields["목표"].startsWith(`${l} — `))) problems.push(`${id}: 목표 수준 형식 오류`);
     const prereq = !fields["선수"] || fields["선수"] === "없음" ? [] : fields["선수"].split(",").map((s) => s.trim());
